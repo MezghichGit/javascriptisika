@@ -51,7 +51,6 @@ var res = (a,b)=>{
 // Les classes en Javascript
 
 class Etudiant{
-
     // Les attributs d'instance
     nom;
     age;
@@ -65,6 +64,8 @@ class Etudiant{
         console.log("Vous êtes : " + this.nom +" vous avez : "+ this.age);
     }
 }
-
-var e = new Etudiant("Amine",20);
-e.info();
+//var e = new Etudiant("Amine",20);
+//e.info();
+var x = "12 b";
+//console.log(parseInt(x));
+console.log(Number(x));

@@ -1,23 +1,48 @@
 <html>
-<meta charset="utf-8"/>
+<meta charset="utf-8" />
+
 <head>
 
     <script type="text/javascript" src="tp.js">
-        
+
     </script>
 
     <script type="text/javascript">
-        window.document.writeln("<h2>Merci bq Javascript</h2>");
-    </script>
+        function updateDiv() {
+            // window.document.writeln("<h2>Merci bq Javascript</h2>");
+            var monObj = document.getElementById("description");
+            monObj.innerHTML = "<h2 align=center>Merci bq Javascript</h2>";
+            //innnerHTML = permet de modifier le contenu d'un objet HTML
+        }
 
+        function exo3() {
+            var x = parseInt(prompt("Donner x", "x"));
+            var y = parseInt(prompt("Donner y", "y"));
+            if (x >= 5) {
+                x = x - 5;
+            } else {
+                x = x + 5;
+            }
+
+            if (y >= 10) {
+                y = y - 10;
+            } else {
+                y = y + 10;
+            }
+            alert("Les resusultat = " + (x+y));
+        }
+    </script>
 </head>
 
 <body>
     <h1 align="center">Formation Javascript</h1>
     <button onmouseenter="messageEntre()" onmouseleave="messageSortie()">Cliquer ici</button>
     <button onclick="formulaire()">Saisi nom</button>
-
     <button onclick="somme()">Calcul Somme</button>
+    <button onclick="updateDiv()">Mon Div</button>
+    <div id="description"></div>
+
+    <button onclick="exo3()">Exo 3</button>
 </body>
 
 </html>
