@@ -25,11 +25,12 @@ function somme(){
     alert("Le résultat de " + v1 + " + "+v2 +" = "+res);
 }
 
-// declaration de la méthode
+// Les features de ECScript 6
 function doSomething()
 {
    
     for(var i = 0; i<10; i++)
+    //for(let i = 0; i<10; i++)
     {
         console.log("i = "+i);
     }
@@ -45,4 +46,25 @@ var res = (a,b)=>{
     console.log("Res = " +(a+b));
 }
 
-res(10,20);
+//res(10,20);
+
+// Les classes en Javascript
+
+class Etudiant{
+
+    // Les attributs d'instance
+    nom;
+    age;
+    // Un constructeur
+    constructor(nom, age){
+        this.nom = nom;
+        this.age = age;
+    }
+     // Une méthode d'instance
+    info(){
+        console.log("Vous êtes : " + this.nom +" vous avez : "+ this.age);
+    }
+}
+
+var e = new Etudiant("Amine",20);
+e.info();
