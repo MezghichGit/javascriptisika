@@ -29,16 +29,15 @@
             } else {
                 y = y + 10;
             }
-            alert("Les resusultat = " + (x+y));
+            alert("Les resusultat = " + (x + y));
         }
 
         function exo4() {
-            for(var i=1;i<1000;i++)
-            {
-                if(i % 23 == 0)
-                //alert("i = "+i);
-                //document.writeln("i = "+i +"<br/>");
-                console.log("i = "+i);
+            for (var i = 1; i < 1000; i++) {
+                if (i % 23 == 0)
+                    //alert("i = "+i);
+                    //document.writeln("i = "+i +"<br/>");
+                    console.log("i = " + i);
             }
         }
     </script>
@@ -55,6 +54,22 @@
     <button onclick="exo3()">Exo 3</button>
 
     <button onclick="exo4()">Exo 4</button>
+
+    <br /><br />
+    <h2 align="center">Mon formulaire de contact</h2>
+    <form name="contact">
+        Nom : <input type="text" id="monNom" name="nom" />
+        <input type="button" value="Enregister" onclick="register()" />
+    </form>
 </body>
+
+<script>
+    function register() {
+        var nom = document.contact.nom.value;
+        var monNom = document.getElementById("monNom").value;
+        alert("Vous êtes : " + nom +" "+monNom);
+    }
+
+</script>
 
 </html>
