@@ -26,6 +26,11 @@
         function messageSortie() {
             alert("Au revoir...");
         }
+
+        function formulaire(){
+         var nom = prompt("Taper votre nom"); // permet de récupérer des data
+         alert("Vous êtes : "+nom);
+        }
     </script>
 
 </head>
@@ -33,6 +38,7 @@
 <body>
     <h1 align="center">Formation Javascript</h1>
     <button onmouseenter="messageEntre()" onmouseleave="messageSortie()">Cliquer ici</button>
+    <button onclick="formulaire()">Saisi nom</button>
 </body>
 
 </html>
