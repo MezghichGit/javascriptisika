@@ -66,6 +66,12 @@ class Etudiant{
 }
 //var e = new Etudiant("Amine",20);
 //e.info();
-var x = "12 b";
+//var x = "12 b";
 //console.log(parseInt(x));
-console.log(Number(x));
+//console.log(Number(x));
+
+var phrase = "J'apprend js et je vais utiliser js dans mes futures projets";
+var index = phrase.indexOf("js",34);
+var lastIndex = phrase.lastIndexOf("js");
+console.log(index);
+console.log(lastIndex);
