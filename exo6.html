@@ -7,13 +7,13 @@
             var choix = "";
 
             if (document.languages.langage[0].checked) {
-                choix = choix + "html ";
+                choix = choix + document.languages.langage[0].value+" ";
             }
             if (document.languages.langage[1].checked) {
-                choix = choix + "css ";
+                choix = choix + document.languages.langage[1].value + " ";
             }
             if (document.languages.langage[2].checked) {
-                choix = choix + "javascript ";
+                choix = choix + document.languages.langage[2].value;
             }
 
             alert("Vous préférez : "+choix);
