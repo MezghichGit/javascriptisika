@@ -24,3 +24,25 @@ function somme(){
     var res = parseFloat(v1) + parseFloat(v2);
     alert("Le résultat de " + v1 + " + "+v2 +" = "+res);
 }
+
+// declaration de la méthode
+function doSomething()
+{
+   
+    for(var i = 0; i<10; i++)
+    {
+        console.log("i = "+i);
+    }
+    console.log("Final i = "+i);
+}
+
+// appel de la méthode
+// doSomething();
+
+
+var res = (a,b)=>{
+    console.log("Somme de deux nombres via Arrow Function");
+    console.log("Res = " +(a+b));
+}
+
+res(10,20);
