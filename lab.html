@@ -8,22 +8,31 @@
         var x = 10;
         var y = 20;
         console.log("La sommme =" + (x+y));*/
-        var languages = ["HTML", "CSS","Javascript","Java","PHP"];
+        // var languages = ["HTML", "CSS","Javascript","Java","PHP"];
         /*
          function somme(a, b){
             return a+b;
          }
 
-         console.log(somme(1,3));*/
-
+         console.log(somme(1,3));
+        
          for(var i=0; i<languages.length;i++){
             console.log("J'aime : "+ languages[i]);
-         }
+         }*/
+        function messageEntre() {
+            alert("Bonjour tout le monde");
+        }
+
+        function messageSortie() {
+            alert("Au revoir...");
+        }
     </script>
 
 </head>
-<body>
 
+<body>
     <h1 align="center">Formation Javascript</h1>
+    <button onmouseenter="messageEntre()" onmouseleave="messageSortie()">Cliquer ici</button>
 </body>
+
 </html>
