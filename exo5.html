@@ -1,0 +1,42 @@
+<html>
+
+<head>
+
+    <script language="javascript" type="text/javascript">
+
+        function info()
+        {
+            var nom = document.forms[0].nom.value;
+            var cin = document.first.cin.value;
+            
+            if(nom.length==0) alert("Champs nom est vide");
+            else if(cin.length ==0) alert("Champs cin est vide");
+            else      alert("Les champs sont valides : "+nom +" "+cin);
+
+            if(Number(cin))
+            {
+                if(cin.length==8) alert("cin valide")
+                else alert("Taille du cin non valide")
+            }
+            else  alert("le cin n'est pas numérique")
+        
+        }
+
+        
+    </script>
+
+</head>
+
+<body>
+
+    <form name="first">
+        Nom : <input type="text" name="nom"/> <br/>
+        CIN : <input type="text" name="cin"/> <br/>
+        <input type="button" value="Valider" onclick="info()"/>
+    </form>
+
+   
+</body>
+
+
+</html>
